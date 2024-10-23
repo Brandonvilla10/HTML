@@ -1,0 +1,371 @@
+/* Color Theme Swatches en Hex 
+/Fondos-de-videojuegos--1-hex { color: #290759; }, Morado oscuro
+/Fondos-de-videojuegos--2-hex { color: #2A0F8C; }, Morado claro
+/Fondos-de-videojuegos--3-hex { color: #010326; }, Morado oscuro Oscuro
+/Fondos-de-videojuegos--4-hex { color: #5056BF; }, Morado Claro CLaro
+/Fondos-de-videojuegos--5-hex { color: #B8F27E; }, Lima
+
+ Fondo color azul oscuro chevere {color: #1e1e28}
+*/
+
+*{
+    /* aquí formateamos toda la página, quitando márgenes, padding y bordes por defecto */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    /* asignamos un color de fondo morado oscuro, definimos una fuente de letra, y eliminamos márgenes por defecto */
+    background-color: #290759;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+p{
+    /* los párrafos tendrán texto blanco, tamaño de fuente más grande, altura de línea, espacios entre palabras, y el texto estará justificado */
+    color: white;
+    font-size: 160%;
+    line-height: 155%;
+    padding: 3%;
+    text-indent: 2%;
+    text-align: justify;
+}
+
+h3{
+    /* para los h3 (títulos) les damos un tamaño grande, color lima, centrado y en mayúsculas */
+    font-size: 175%;
+    line-height: 155%;
+    font-weight: 500;
+    color: #B8F27E;
+    text-align:center;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+a{
+    /* los enlaces tendrán color lima, sin subrayado y el texto en negrita */
+    color: #B8F27E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    /* cuando pasemos el cursor por encima, los enlaces cambian a color aqua */
+    color: aqua;
+}
+
+img{
+    /* las imágenes se mostrarán centradas, con ancho máximo del 100%, ajustando el alto automáticamente */
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-bottom: 4px;
+}
+
+#wrapper{
+    /* contenedor general con ancho máximo de 1200px y centrado */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+banner-wrapper{
+    /* contenedor para el banner, centrado y con algo de espacio abajo */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 3% 0;
+}
+
+header{
+    /* el encabezado ocupa todo el ancho, con una altura de 100px, pegado arriba a la izquierda */
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+
+header #logo img{
+    /* imagen del logo a la izquierda con un tamaño de 100px de ancho */
+    float: left;
+    width: 100px;
+}
+
+nav{
+    /* navegación a la derecha con un poco de padding arriba */
+    float: right;
+    padding:  25px 20px 0px 0px;
+}
+
+#menu-icon{
+    /* icono del menú oculto por defecto, aparecerá en pantallas pequeñas */
+    display: none;
+    font-size: 50px;
+}
+
+ul{
+    /* quitamos el estilo de lista a los elementos del menú */
+    list-style: none;
+}
+
+nav ul li{
+    /* los ítems del menú se mostrarán en línea, con un tamaño grande y padding */
+    font-size: 150%;
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    /* los enlaces del menú tendrán color lima */
+    color: #B8F27E;
+}
+
+.current{
+    /* para el ítem activo, el color también será lima */
+    color: #B8F27E;
+}
+
+.slider{
+    /* el slider tendrá un ancho máximo de 1200px */
+    max-width: 1200px;
+}
+
+.slider img{
+    /* las imágenes del slider ocuparán el 100% del ancho disponible */
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 0 auto;
+}
+
+.one-third{
+    /* las secciones de un tercio del ancho, con padding y centrado */
+    width: 31.5%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+.icon-wrap{
+    /* contenedor circular para íconos con fondo lima, centrado y con tamaño de 120px */
+    margin:  0 auto;
+    width: 120px;
+    height: 120px;
+    background-color: #B8F27E;
+    border-radius: 125px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.icon-wrap i {
+    /* íconos en el contenedor, color morado oscuro y tamaño grande */
+    text-align: center;
+    color:  #010326;
+    font-size: 450%;
+    padding: 20%;
+}
+
+/* section 2 */
+
+.left-col{
+    /* columna izquierda con 60% de ancho, padding y altura automática */
+    float: left;
+    margin: 0 auto;
+    width:  60%;
+    height: auto;
+    padding: 1%;
+}
+
+.sidebar{
+    /* columna lateral derecha  de ancho y padding */
+    float: left;
+    margin: 0 auto;
+    width: 55%;
+    height: auto;
+    padding: 13%;
+}
+
+.one-third-padding{
+    /* otra sección de un tercio del ancho, con margen y padding */
+    width: 29%;
+    float: left;
+    margin: 2% 2%;
+}
+
+.clearfix-padding{
+    /* usamos clearfix para evitar problemas con flotantes y le damos padding */
+    clear: both;
+    padding: 2%;
+}
+
+footer{
+    /* el pie de página tiene fondo morado oscuro, un ancho de 1254px y altura de 167px */
+    background-color: #010326;
+    width: 100%;
+    height: 184px;
+    overflow: hidden;
+}
+
+.icon-text{
+    /* el texto con íconos ocupa el 100% del ancho */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.icon-text-icon{
+    /* los íconos ocupan el 20% del ancho y tienen algo de padding */
+    float: left;
+    width: 20%;
+    padding: 4%;
+}
+
+.icon-text-text{
+    /* el texto junto al ícono ocupa el 60% del ancho, con padding y tamaño de fuente mediano */
+    float: left;
+    width: 60%;
+    padding: 4% 4% 2% 0%;
+    font-size: 16px;
+}
+
+.footer-nav{
+    /* el menú en el pie de página está alineado a la derecha */
+    text-align: right;
+}
+
+footer-nav a{
+    /* los enlaces en el pie de página tienen un tamaño mas grandecito y color blanco */
+    font-size: 160%;
+    color: white;
+    font-weight: 300;
+}
+
+.footer-nav a:hover{
+    /* al pasar el cursor, los enlaces en el pie de página seguiran de colores blancos */
+    color: white;
+}
+
+.social{
+    /* lista de íconos sociales centrada */
+    list-style-type: none;
+    text-align: center;
+}
+
+.social li{
+    /* los íconos sociales se mostrarán en línea */
+    display: inline;
+}
+
+.social i{
+    /* los íconos sociales son grandes y tienen margen, padding y color blanco */
+    font-size: 420%;
+    margin: 1%;
+    padding: 5%;
+    color: white;
+}
+
+.social i:hover{
+    /* al pasar el cursor, los íconos sociales cambian a color lima */
+    color: #B8F27E;
+}
+
+footer.second{
+    /* en el segundo pie de página, agregamos una línea superior y centramos el contenido */
+    border-top: 1px solid #B8F27E;
+    text-align:center;
+    margin: 0;
+}
+
+footer.second p.second a{
+    /* enlaces en el segundo pie de página con color blanco y tamaño de fuente grande */
+    text-align: center;
+    color: white;
+    font-size: 160%;
+    line-height: 155%;
+}
+
+/* responsive: para pantallas pequeñas (menos de 768px) ajustamos todo */
+@media screen and(max-width: 768px) {
+    p{
+        /* los párrafos tendrán un tamaño de fuente más pequeño */
+        font-size: 130%;
+    }    
+    h3{
+        /* los títulos h3 serán más pequeños en pantallas chicas */
+        font-size: 150%;
+    }
+    header{
+        /* el header será más bajo */
+        height: 80px;
+        position: relative;
+    }
+    header #logo{
+        /* ajustamos el margen del logo en pantallas pequeñas */
+        margin: 15px 0 20px --25px
+    }
+    #menu-icon{
+        /* mostramos el ícono del menú en pantallas pequeñas */
+        display: inline-block;
+    }
+    nav:hover ul{
+       display: block;
+
+    }
+    nav ul nav:active ul{
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        padding: 20px;
+        background: white;
+        border:  1px solid white;
+        right: 20px;
+        width: 30%;
+        opacity: .95;
+    }
+    nav li{
+        text-align: center;
+        width: 100%;
+    }
+    .one-third{
+        float: left;
+        width: 100%;
+    }
+    .icon-wrap{
+        height: 80px;
+        width: 80px ;
+        margin-top: 3%;
+    }
+    .icon-wrap i{
+        font-size: 250%;
+        padding-top: 27%;
+    }
+    .left-col{
+        width: 100%;
+        padding: 0;
+
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .one-third-padding{
+        width: 98%;
+        margin: 0;
+        padding: 1%;
+    }
+    .icon-text-icon{
+        width: 100%;
+        padding: 0 0 2% 0;
+    }
+    .icon-text-text{
+        width: 100%;
+        padding: 2% 0 0 0;
+        font-size: 80%;
+    }
+    .footer-nav{
+        margin: 0 auto;
+        text-align: center;
+        padding: 5%;
+
+    }
+
+    .footer-nav li{
+        padding: 1%;
+    }
+}

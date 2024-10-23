@@ -1,0 +1,366 @@
+/* aquí formateamos toda la página, quitando márgenes, padding y bordes por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+/* asignamos un color de fondo morado oscuro, definimos una fuente de letra, y eliminamos márgenes por defecto */
+body {
+    background-color: #290759;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+/* contenedor general con ancho máximo de 1200px y centrado */
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* contenedor para el banner, centrado y con algo de espacio abajo */
+#banner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 3% 0;
+}
+
+/* el encabezado ocupa todo el ancho, con una altura de 100px, pegado arriba a la izquierda */
+header {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+
+/* imagen del logo a la izquierda con un tamaño de 100px de ancho */
+header #logo img {
+    float: left;
+    width: 100px;
+}
+
+/* navegación a la derecha con un poco de padding arriba */
+nav {
+    float: right;
+    padding: 25px 20px 0px 0px;
+}
+
+/* icono del menú oculto por defecto, aparecerá en pantallas pequeñas */
+#menu-icon {
+    display: none;
+    font-size: 50px;
+}
+
+/* quitamos el estilo de lista a los elementos del menú */
+ul {
+    list-style: none;
+}
+
+/* los ítems del menú se mostrarán en línea, con un tamaño grande y padding */
+nav ul li {
+    font-size: 150%;
+    display: inline-block;
+    padding: 20px;
+}
+
+/* los enlaces del menú tendrán color lima */
+nav ul li a {
+    color: #B8F27E;
+}
+
+/* para el ítem activo, el color también será lima */
+.current {
+    color: #B8F27E;
+}
+
+/* el slider tendrá un ancho máximo de 1200px */
+.slider {
+    max-width: 1200px;
+}
+
+/* las imágenes del slider ocuparán el 100% del ancho disponible */
+.slider img {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 0 auto;
+}
+
+/* las secciones de un tercio del ancho, con padding y centrado */
+.one-third {
+    width: 31.5%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+/* contenedor circular para íconos con fondo lima, centrado y con tamaño de 120px */
+.icon-wrap {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    background-color: #B8F27E;
+    border-radius: 125px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+/* íconos en el contenedor, color morado oscuro y tamaño grande */
+.icon-wrap i {
+    text-align: center;
+    color: #010326;
+    font-size: 450%;
+    padding: 20%;
+}
+
+/* columna izquierda con 60% de ancho, padding y altura automática */
+.left-col {
+    float: left;
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    padding: 1%;
+}
+
+/* columna lateral derecha de ancho y padding */
+.sidebar {
+    float: left;
+    margin: 0 auto;
+    width: 55%;
+    height: auto;
+    padding: 13%;
+}
+
+/* otra sección de un tercio del ancho, con margen y padding */
+.one-third-padding {
+    width: 29%;
+    float: left;
+    margin: 2% 2%;
+}
+
+/* usamos clearfix para evitar problemas con flotantes y le damos padding */
+.clearfix-padding {
+    clear: both;
+    padding: 2%;
+}
+
+/* el pie de página tiene fondo morado oscuro, un ancho de 1254px y altura de 167px */
+footer {
+    background-color: #010326;
+    width: 100%;
+    height: 184px;
+    overflow: hidden;
+}
+
+/* el texto con íconos ocupa el 100% del ancho */
+.icon-text {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* los íconos ocupan el 20% del ancho y tienen algo de padding */
+.icon-text-icon {
+    float: left;
+    width: 20%;
+    padding: 4%;
+}
+
+/* el texto junto al ícono ocupa el 60% del ancho, con padding y tamaño de fuente mediano */
+.icon-text-text {
+    float: left;
+    width: 60%;
+    padding: 4% 4% 2% 0%;
+    font-size: 16px;
+}
+
+/* el menú en el pie de página está alineado a la derecha */
+.footer-nav {
+    text-align: right;
+}
+
+/* los enlaces en el pie de página tienen un tamaño más grande y color blanco */
+.footer-nav a {
+    font-size: 160%;
+    color: white;
+    font-weight: 300;
+}
+
+/* al pasar el cursor, los enlaces en el pie de página seguirán de colores blancos */
+.footer-nav a:hover {
+    color: white;
+}
+
+/* lista de íconos sociales centrada */
+.social {
+    list-style-type: none;
+    text-align: center;
+}
+
+/* los íconos sociales se mostrarán en línea */
+.social li {
+    display: inline;
+}
+
+/* los íconos sociales son grandes y tienen margen, padding y color blanco */
+.social i {
+    font-size: 420%;
+    margin: 1%;
+    padding: 5%;
+    color: white;
+}
+
+/* al pasar el cursor, los íconos sociales cambian a color lima */
+.social i:hover {
+    color: #B8F27E;
+}
+
+/* en el segundo pie de página, agregamos una línea superior y centramos el contenido */
+footer.second-footer {
+
+    text-align: center;
+    margin: 0;
+}
+
+/* enlaces en el segundo pie de página con color blanco y tamaño de fuente grande */
+footer.second-footer p a {
+    text-align: center;
+    color: white;
+    font-size: 160%;
+    line-height: 155%;
+}
+
+/* los párrafos tendrán texto blanco, tamaño de fuente más grande, altura de línea, espacios entre palabras, y el texto estará justificado */
+p {
+    color: white;
+    font-size: 160%;
+    line-height: 155%;
+    padding: 3%;
+    text-indent: 2%;
+    text-align: justify;
+}
+
+/* para los h3 (títulos) les damos un tamaño grande, color lima, centrado y en mayúsculas */
+h3 {
+    font-size: 175%;
+    line-height: 155%;
+    font-weight: 500;
+    color: #B8F27E;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+/* los enlaces tendrán color lima, sin subrayado y el texto en negrita */
+a {
+    color: #B8F27E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* cuando pasemos el cursor por encima, los enlaces cambian a color aqua */
+a:hover {
+    color: aqua;
+}
+
+/* las imágenes se mostrarán centradas, con ancho máximo del 100%, ajustando el alto automáticamente */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-bottom: 4px;
+}
+
+/* responsive: para pantallas pequeñas (menos de 768px) ajustamos todo */
+@media screen and (max-width: 768px) {
+    /* los párrafos tendrán un tamaño de fuente más pequeño */
+    p {
+        font-size: 130%;
+    }
+
+    /* los títulos h3 serán más pequeños en pantallas chicas */
+    h3 {
+        font-size: 150%;
+    }
+
+    /* el header será más bajo */
+    header {
+        height: 80px;
+        position: relative;
+    }
+
+    /* ajustamos el margen del logo en pantallas pequeñas */
+    header #logo {
+        margin: 15px 0 20px -25px;
+    }
+
+    /* mostramos el ícono del menú en pantallas pequeñas */
+    #menu-icon {
+        display: inline-block;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+
+    nav ul nav:active ul {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        padding: 20px;
+        background: white;
+        border: 1px solid white;
+        right: 20px;
+        width: 30%;
+        opacity: .95;
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .one-third {
+        float: left;
+        width: 100%;
+    }
+
+    .icon-wrap {
+        height: 80px;
+        width: 80px;
+        margin-top: 3%;
+    }
+
+    .icon-wrap i {
+        font-size: 250%;
+        padding-top: 27%;
+    }
+
+    .left-col {
+        width: 100%;
+        padding: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .one-third-padding {
+        width: 98%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .clearfix-padding {
+        padding: 1%;
+    }
+
+    footer {
+        padding: 5%;
+        height: 80px;
+        overflow: hidden;
+    }
+
+    footer.second-footer p {
+        font-size: 95%;
+    }
+}
